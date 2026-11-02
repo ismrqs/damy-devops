@@ -11,9 +11,9 @@ Nesta Sprint, desenvolvemos um projeto utilizando uma API educativa de quiz, exe
 | Nome                     | RM     |
 | ------------------------ | ------ |
 | Isabely Marques da Silva | 566663 |
-| Luana Oliveira           | 566621 |
-| Mateus Ribeiro           | 566630 |
-| Paulo Gustavo            | 568580 |
+| Luana Alves de Oliveira           | 566621 |
+| Mateus Ribeiro Azevedo          | 566630 |
+| Paulo Gustavo Moraes de Sousa           | 568580 |
 
 **Turma:** 2TDSPR
 
