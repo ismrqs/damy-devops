@@ -1,0 +1,11 @@
+
+services:
+  damy-api:
+    container_name: damy-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: damy-api:1.0
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

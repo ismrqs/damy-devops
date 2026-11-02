@@ -1,0 +1,42 @@
+
+[
+  {
+    "id": 1,
+    "tema": "Saúde",
+    "pergunta": "Qual aplicação utiliza tecnologia nuclear na medicina?",
+    "alternativas": [
+      "Medicina nuclear para diagnóstico",
+      "Medição da pressão arterial com aparelho comum",
+      "Aplicação de curativos",
+      "Exame de visão convencional"
+    ],
+    "correta": 0,
+    "explicacao": "A medicina nuclear utiliza radiofármacos em procedimentos de diagnóstico e tratamento."
+  },
+  {
+    "id": 2,
+    "tema": "Energia",
+    "pergunta": "Qual é a principal função de um reator nuclear em uma usina?",
+    "alternativas": [
+      "Produzir petróleo",
+      "Gerar calor por fissão nuclear",
+      "Produzir energia solar",
+      "Armazenar energia eólica"
+    ],
+    "correta": 1,
+    "explicacao": "O calor produzido pela fissão nuclear pode ser utilizado para gerar vapor e eletricidade."
+  },
+  {
+    "id": 3,
+    "tema": "Agricultura",
+    "pergunta": "Como a radiação pode ser utilizada na conservação de alimentos?",
+    "alternativas": [
+      "Para aumentar o teor de açúcar",
+      "Para transformar alimentos em radioativos",
+      "Para reduzir microrganismos e pragas",
+      "Para substituir a refrigeração em todos os casos"
+    ],
+    "correta": 2,
+    "explicacao": "A irradiação controlada pode reduzir microrganismos e pragas e ajudar na conservação de determinados alimentos."
+  }
+]

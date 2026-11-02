@@ -1,0 +1,13 @@
+
+{
+  "name": "damy-devops",
+  "version": "1.0.0",
+  "description": "API educativa do DAMY para o Challenge Amazul",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
