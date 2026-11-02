@@ -4,7 +4,7 @@ set -euo pipefail
 
 RG="rg-damy-devops"
 VM="vm-damy-devops"
-LOCATION="brazilsouth"
+LOCATION="spaincentral"
 ADMIN="azureuser"
 
 echo "Criando grupo de recursos..."
@@ -18,6 +18,7 @@ echo "Criando maquina virtual..."
 az vm create \
   --resource-group "$RG" \
   --name "$VM" \
+  --location "$LOCATION" \
   --image Ubuntu2204 \
   --size Standard_B2s \
   --admin-username "$ADMIN" \
