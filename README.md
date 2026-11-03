@@ -35,7 +35,7 @@ A comunicação ocorre por HTTP, utilizando o IP público da VM e a porta 3000.
 
 O armazenamento das perguntas é realizado em um arquivo JSON incluído na imagem da aplicação.
 
-**Diagrama:** `docs/arquitetura-damy.png`
+**Diagrama:** `docs/arquitetura-damy.jpg`
 
 ## 5. Funcionalidades da API
 
