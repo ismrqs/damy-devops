@@ -91,6 +91,44 @@ chmod +x scripts/criar-vm.sh
 
 Após a criação, conectar por SSH, instalar o Docker, clonar o repositório e executar a aplicação na VM.
 
+### Comandos Azure CLI utilizados
+
+O provisionamento da infraestrutura foi realizado por meio da Azure CLI, utilizando os seguintes comandos:
+
+```bash
+# Criar o grupo de recursos
+az group create --name rg-damy-devops --location spaincentral
+
+# Criar a máquina virtual
+az vm create \
+  --resource-group rg-damy-devops \
+  --name vm-damy-devops \
+  --location spaincentral \
+  --image Ubuntu2404 \
+  --size Standard_B2ls_v2 \
+  --admin-username azureuser \
+  --authentication-type ssh \
+  --generate-ssh-keys \
+  --public-ip-sku Standard
+
+# Liberar a porta da API
+az vm open-port --resource-group rg-damy-devops --name vm-damy-devops --port 3000 --priority 1010
+
+# Consultar as informações da VM
+az vm show --resource-group rg-damy-devops --name vm-damy-devops --show-details --output table
+
+# Consultar o IP público
+az vm list-ip-addresses --resource-group rg-damy-devops --name vm-damy-devops --output table
+
+# Excluir o grupo de recursos
+az group delete --name rg-damy-devops --yes
+
+# Confirmar a exclusão
+az group exists --name rg-damy-devops
+```
+
+Esses comandos também estão organizados nos scripts `criar-vm.sh` e `excluir-recursos.sh`, disponíveis no repositório.
+
 ## 8. Testes em nuvem
 
 Após a execução do container na VM do Azure, o funcionamento da API pode ser verificado acessando os endpoints `/health` e `/perguntas` pelo IP público da máquina virtual, utilizando a porta 3000.
