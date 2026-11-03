@@ -37,6 +37,8 @@ O armazenamento das perguntas é realizado em um arquivo JSON incluído na image
 
 **Diagrama:** `docs/arquitetura-damy.jpg`
 
+<img width="867" height="757" alt="Image" src="https://github.com/user-attachments/assets/42fe9114-4ca2-446b-9213-502db5fed706" />
+
 ## 5. Funcionalidades da API
 
 | Método | Endpoint         | Descrição                    |
