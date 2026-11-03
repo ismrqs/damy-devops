@@ -19,8 +19,8 @@ az vm create \
   --resource-group "$RG" \
   --name "$VM" \
   --location "$LOCATION" \
-  --image Ubuntu2204 \
-  --size Standard_B2s \
+  --image Ubuntu2404 \
+  --size Standard_B2ls_v2 \
   --admin-username "$ADMIN" \
   --authentication-type ssh \
   --generate-ssh-keys \
